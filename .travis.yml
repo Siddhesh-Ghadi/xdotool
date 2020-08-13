@@ -1,8 +1,10 @@
 sudo: require
 language: cpp
 compiler: gcc
-dist: trusty
-
+dist: xenial
+arch:
+  - amd64
+  - ppc64le
 install:
   - sudo apt-get install libx11-dev libxtst-dev libxinerama-dev libxkbcommon-dev
 
